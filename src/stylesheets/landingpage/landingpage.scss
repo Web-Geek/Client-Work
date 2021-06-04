@@ -1,0 +1,154 @@
+@mixin font {
+    font-family: "Roboto",sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navbar{
+    background-color: #1D1D1D !important;
+    padding: 5px 20px;
+}
+.logo{
+    border-right: 2px solid #6A6A6A;
+    padding-right: 20px;
+}
+.dev-text{
+    margin-top: 15px;
+    margin-right:auto;
+    padding-left: 20px;
+    text-transform: uppercase;
+    color: #6A6A6A !important;
+    @include font();
+}
+.signup{
+    color: rgb(250, 250, 250);
+    @include font();
+    letter-spacing: .2px;
+    &:hover{
+        color: rgb(250, 250, 250);
+    }
+}
+
+.card1{
+    padding: 0;
+    border: none;
+    border-radius: 20px;
+    background-color: #1D1D1D;
+    .col-img{
+        .img1{
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+    .text-col{
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .alltext{
+            background-color: #1D1D1D;
+            border-radius: 20px;
+            padding: 20px 0px;
+            .jio-h1{
+                text-align: left;
+                font-size: 3rem;
+                line-height: 3.5rem;
+            }
+            .dash-h1{
+                text-align: left;
+                font-size: 3rem;
+                line-height: 2.5rem;
+            }
+            .col-p{
+                text-align: left;
+                font-family: "Roboto",sans-serif;
+                margin-top: 30px;
+                font-size: 1.3rem;
+            }
+            .btn{
+                padding: 5px 5rem;
+                @include font();
+                font-weight: normal;
+                border-radius: 5px;
+                background-color: #4096EF;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.card2{
+    background-image: linear-gradient(to right,#1D1D1D,#2c2c2c);
+    padding: 30px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.card3{
+    background-image: linear-gradient(to right,#1D1D1D,#2c2c2c);
+    padding: 30px;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: none;
+}
+.des-h1,.dev-h1{
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.dev-p,.des-p{
+    font-family: 'Roboto',sans-serif;
+    color: rgb(204, 204, 204);
+    font-size: 1.2rem;
+}
+.explore{
+    width: 10rem;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.3rem;
+}
+
+// background-image: url("https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnwyMDU3MjMyfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+
+
+
+@media screen and (max-width:425px){
+    .container-fluid{
+        padding:0;
+    }
+    .navbar{
+        padding: 5px 10px;
+    }
+    .logo{
+        border-right: 2px solid #6A6A6A;
+        padding-right: 5px;
+    }
+    .dev-text{
+        margin-left: -10px;
+    }
+}
+@media screen and (max-width:486px){
+    .card1{
+        .text-col{
+            .alltext{
+                .jio-h1{
+                    font-size: 2.5rem;
+                    line-height: 3rem;
+                }
+                .dash-h1{
+                    font-size: 2.5rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }            
+}
+@media screen and (max-width:769px){
+    .card1{
+        .text-col{
+            .alltext{
+                padding: 20px 20px !important;
+            }
+        }    
+    }
+}
